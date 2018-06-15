@@ -6,12 +6,36 @@
             <br/>
             <h1 class="ui header"><span id ="title">Avengers chatbot</span></h1>
             <br/>
-            <div class="ui input">
-                <input id="userDialogueText" type="text" size="100" value=""/>
+            <div height="300" id="output">
+                <div id="output-content">
+                </div>
             </div>
-            <div height="300" display="block" id="output"></div>
+            <div id="inputDiv" class="ui huge input">
+                <input id="userDialogueText" type="text" size="80" value="" placeholder="Find answers from the superheroes..."/>
+                <i id="icon" class="search icon"></i>
+            </div>
         </div>
     </body>
+    <style media="screen" type="text/css">
+     #output {
+         position: relative;
+         height: 75%;
+         display: flex;;
+         vertical-align: bottom;
+         padding-bottom: 10px;
+         overflow: auto;
+     }
+     #output-content {
+         align-self: flex-end;
+         font-size: 20px;
+         padding-bottom: 20px;
+     }
+     .bold {
+         style: bold;
+     }
+     .input {
+     }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
